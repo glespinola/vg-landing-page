@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./style/normalize.css" as="style"/>
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/db9f70d841.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="./style/style.css" as="style"/>
+    <link href="./style/style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>VG</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">VG <span>Servicios</span></h1>
+    </header>
+    <div class="nav__bg">
+        <nav class="nav__principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Nuestros Clientes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </div>
+    <section class="hero">
+        <div class="contenido--hero">
+            <h2>Electricidad, Mantenimiento e Instalacion de Cámaras</h2>
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffec00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="11" r="3" />
+                    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                </svg>
+                <p>Avellaneda, BS.AS</p>
+            </div>
+            <a  class="btn" id="contactar">Contactar</a>
+        </div>
+    </section>
+    <main class="contenedor sombra">
+        <h2>Nuestros Servicios</h2>  
+        <div class="servicios">
+            <section class="servicio">
+                <h3>Electricidad</h3>
+                    <div class="icons">
+
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, quam.</p>    
+            </section>
+            <section class="servicio">
+                <h3>Camaras de Seguridad</h3>
+                    <div class="icons">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, hic?</p>   
+            </section>
+            <section class="servicio">
+                <h3>Mantenimiento</h3>
+                    <div class="icons">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, vitae.</p>
+            </section>
+        </div>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form class="formulario" id="form">
+                <fieldset>
+                    <legend>Contactanos llenando todos los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre" name="name" id="name" required autofocus>
+                        </div>
+
+                        <div class="campo">
+                            <label>Telefono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Telefono" name="phone" id="phone" required>
+                        </div>
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Correo" name="email" id="email" required> 
+                        </div>
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text" name="message" id="message" required></textarea >
+                        </div>
+                    </div>
+                        <div class="alinear-derecha flex">
+                            <input class="btn w-sm-100" type="submit" id="button" value="Enviar">
+                        </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        Made by <a href="http://github.com/glespinola" target="_blank" rel="noopener noreferrer">glespinola</a> Copyright VG Servicios - 2022. Todos los derechos reservados.
+    </footer>
+    
+</body>    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script src="./index.js"></script>
+</html>
