@@ -1,1 +1,1 @@
-# vg-landing-page
+# VG
